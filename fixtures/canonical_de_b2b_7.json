@@ -1,0 +1,46 @@
+{
+  "invoice_number": "EX-2026-0005",
+  "issue_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "currency": "EUR",
+  "buyer_reference": "BEST-2026-007",
+  "note": "Ermäßigter Steuersatz 7 % (synthetisch).",
+  "seller": {
+    "name": "Beispiel GmbH",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "country": "DE",
+    "vat_id": "DE123456789",
+    "email": "rechnung@beispiel.example",
+    "phone": "+49-30-000000-0",
+    "contact_name": "Ina Beispiel"
+  },
+  "buyer": {
+    "name": "Kunde Beispiel GmbH",
+    "street": "Speicherstadt 12",
+    "city": "Hamburg",
+    "postal_code": "20457",
+    "country": "DE",
+    "vat_id": "DE987654321",
+    "email": "einkauf@kunde-beispiel.example"
+  },
+  "lines": [
+    {
+      "id": "1",
+      "name": "Fachbuch E-Rechnung (Beispiel, Print)",
+      "quantity": "10",
+      "unit": "C62",
+      "net_unit_price": "29.00",
+      "vat_category": "S",
+      "vat_rate": "7.00"
+    }
+  ],
+  "payment": {
+    "means_code": "58",
+    "iban": "DE89370400440532013000",
+    "iban_note": "EXAMPLE — not a live account",
+    "account_name": "Beispiel GmbH",
+    "terms": "Zahlbar innerhalb von 14 Tagen."
+  }
+}

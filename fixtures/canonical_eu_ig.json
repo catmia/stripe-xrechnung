@@ -1,0 +1,51 @@
+{
+  "invoice_number": "EX-2026-IG-0003",
+  "issue_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "currency": "EUR",
+  "buyer_reference": "PO-NL-2026-88",
+  "delivery_date": "2026-03-12",
+  "delivery_country": "NL",
+  "note": "Innergemeinschaftliche Lieferung (Kategorie K). Synthetisch.",
+  "seller": {
+    "name": "Beispiel GmbH",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "country": "DE",
+    "vat_id": "DE123456789",
+    "email": "rechnung@beispiel.example",
+    "phone": "+49-30-000000-0",
+    "contact_name": "Ina Beispiel"
+  },
+  "buyer": {
+    "name": "Voorbeeld B.V.",
+    "street": "Voorbeeldstraat 4",
+    "city": "Amsterdam",
+    "postal_code": "1012 JS",
+    "country": "NL",
+    "vat_id": "NL123456789B01",
+    "email": "ap@voorbeeld.example",
+    "endpoint_id": "ap@voorbeeld.example"
+  },
+  "lines": [
+    {
+      "id": "1",
+      "name": "Lizenz SaaS Professional, 12 Monate",
+      "quantity": "1",
+      "unit": "C62",
+      "net_unit_price": "1200.00",
+      "vat_category": "K",
+      "vat_rate": "0.00",
+      "exemption_reason_code": "VATEX-EU-IC",
+      "exemption_reason": "Innergemeinschaftliche Lieferung"
+    }
+  ],
+  "payment": {
+    "means_code": "58",
+    "iban": "DE89370400440532013000",
+    "iban_note": "EXAMPLE — not a live account",
+    "bic": "COBADEFFXXX",
+    "account_name": "Beispiel GmbH"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "invoice_number": "EX-2026-0001",
+  "issue_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "type_code": "380",
+  "currency": "EUR",
+  "buyer_reference": "BEST-2026-0042",
+  "note": "Synthetisches Beispiel — keine echten Personen.",
+  "order_reference": "BEST-2026-0042",
+  "period_start": "2026-02-15",
+  "period_end": "2026-03-14",
+  "seller": {
+    "name": "Beispiel GmbH",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "region": "BE",
+    "country": "DE",
+    "vat_id": "DE123456789",
+    "email": "rechnung@beispiel.example",
+    "phone": "+49-30-000000-0",
+    "contact_name": "Ina Beispiel",
+    "endpoint_id": "rechnung@beispiel.example",
+    "endpoint_scheme": "EM"
+  },
+  "buyer": {
+    "name": "Kunde Beispiel GmbH",
+    "street": "Speicherstadt 12",
+    "city": "Hamburg",
+    "postal_code": "20457",
+    "region": "HH",
+    "country": "DE",
+    "vat_id": "DE987654321",
+    "email": "einkauf@kunde-beispiel.example",
+    "phone": "+49-40-000000-0",
+    "contact_name": "Kai Käufer",
+    "endpoint_id": "einkauf@kunde-beispiel.example",
+    "endpoint_scheme": "EM"
+  },
+  "lines": [
+    {
+      "id": "1",
+      "name": "Cloud-Hosting Professional, 1 Monat",
+      "quantity": "1",
+      "unit": "MON",
+      "net_unit_price": "100.00",
+      "vat_category": "S",
+      "vat_rate": "19.00",
+      "period_start": "2026-02-15",
+      "period_end": "2026-03-14"
+    }
+  ],
+  "payment": {
+    "means_code": "58",
+    "iban": "DE89370400440532013000",
+    "iban_note": "EXAMPLE — not a live account",
+    "bic": "COBADEFFXXX",
+    "account_name": "Beispiel GmbH",
+    "remittance": "EX-2026-0001",
+    "terms": "Zahlbar innerhalb von 30 Tagen netto."
+  }
+}

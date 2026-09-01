@@ -1,0 +1,47 @@
+[project]
+name = "stripe-xrechnung"
+version = "0.1.0"
+description = "Stripe Invoice JSON → XRechnung 3.0.2 UBL 2.1 (offline, never invents VAT IDs)"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { file = "LICENSE" }
+authors = [
+  { name = "catmia" },
+]
+keywords = ["stripe", "xrechnung", "ubl", "en16931", "e-invoice", "e-rechnung"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = [
+  "pydantic>=2.0",
+  "lxml>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/catmia/stripe-xrechnung"
+Issues = "https://github.com/catmia/stripe-xrechnung/issues"
+
+[project.scripts]
+stripe-xrechnung = "stripe_xrechnung.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,50 @@
+{
+  "invoice_number": "EX-2026-B2G-0002",
+  "issue_date": "2026-03-15",
+  "due_date": "2026-04-14",
+  "currency": "EUR",
+  "buyer_reference": "04011000-1234512345-06",
+  "note": "B2G-Beispiel mit Leitweg-ID (synthetisch). Leitweg-ID vom Auftraggeber, niemals geraten.",
+  "seller": {
+    "name": "Beispiel GmbH",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "country": "DE",
+    "vat_id": "DE123456789",
+    "email": "rechnung@beispiel.example",
+    "phone": "+49-30-000000-0",
+    "contact_name": "Ina Beispiel",
+    "endpoint_id": "rechnung@beispiel.example",
+    "endpoint_scheme": "EM"
+  },
+  "buyer": {
+    "name": "Stadt Beispiel",
+    "street": "Rathausplatz 1",
+    "city": "Berlin",
+    "postal_code": "10178",
+    "country": "DE",
+    "email": "rechnungen@stadt-beispiel.example",
+    "endpoint_id": "04011000-1234512345-06",
+    "endpoint_scheme": "0204"
+  },
+  "lines": [
+    {
+      "id": "1",
+      "name": "Softwarepflege Rathaus-Portal, Q1 2026",
+      "quantity": "20",
+      "unit": "HUR",
+      "net_unit_price": "95.00",
+      "vat_category": "S",
+      "vat_rate": "19.00"
+    }
+  ],
+  "payment": {
+    "means_code": "58",
+    "iban": "DE89370400440532013000",
+    "iban_note": "EXAMPLE — not a live account",
+    "bic": "COBADEFFXXX",
+    "account_name": "Beispiel GmbH",
+    "terms": "Zahlbar innerhalb von 30 Tagen netto."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "object": "list",
+  "url": "/v1/customers/cus_example_buyer/tax_ids",
+  "has_more": false,
+  "data": [
+    {
+      "id": "txi_example_eu_vat",
+      "object": "tax_id",
+      "country": "DE",
+      "created": 1771113600,
+      "customer": "cus_example_buyer",
+      "livemode": false,
+      "type": "eu_vat",
+      "value": "DE987654321",
+      "verification": {
+        "status": "unavailable",
+        "verified_address": null,
+        "verified_name": null
+      }
+    }
+  ]
+}

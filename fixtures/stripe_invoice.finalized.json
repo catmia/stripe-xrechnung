@@ -1,0 +1,151 @@
+{
+  "id": "in_1ExampleFinalized0001",
+  "object": "invoice",
+  "account_country": "DE",
+  "account_name": "Beispiel GmbH",
+  "amount_due": 11900,
+  "amount_paid": 0,
+  "amount_remaining": 11900,
+  "attempted": false,
+  "auto_advance": false,
+  "billing_reason": "manual",
+  "collection_method": "send_invoice",
+  "created": 1773568800,
+  "currency": "eur",
+  "customer": "cus_example_buyer",
+  "customer_address": {
+    "city": "Hamburg",
+    "country": "DE",
+    "line1": "Speicherstadt 12",
+    "line2": null,
+    "postal_code": "20457",
+    "state": "HH"
+  },
+  "customer_email": "einkauf@kunde-beispiel.example",
+  "customer_name": "Kunde Beispiel GmbH",
+  "customer_phone": "+49-40-000000-0",
+  "customer_tax_exempt": "none",
+  "customer_tax_ids": [
+    {
+      "type": "eu_vat",
+      "value": "DE987654321"
+    }
+  ],
+  "default_tax_rates": [
+    {
+      "id": "txr_de19_example",
+      "object": "tax_rate",
+      "active": true,
+      "country": "DE",
+      "description": "German standard VAT (example)",
+      "display_name": "USt",
+      "inclusive": false,
+      "jurisdiction": "DE",
+      "livemode": false,
+      "percentage": 19.0,
+      "tax_type": "vat"
+    }
+  ],
+  "description": "SaaS-Abo Februar/März 2026 (synthetisch)",
+  "due_date": 1776160800,
+  "livemode": false,
+  "metadata": {
+    "leitweg_id": "04011000-1234512345-06",
+    "buyer_reference": "04011000-1234512345-06"
+  },
+  "number": "EX-2026-STRIPE-0001",
+  "paid": false,
+  "period_end": 1773568800,
+  "period_start": 1771113600,
+  "status": "open",
+  "status_transitions": {
+    "finalized_at": 1773568800,
+    "marked_uncollectible_at": null,
+    "paid_at": null,
+    "voided_at": null
+  },
+  "subtotal": 10000,
+  "tax": 1900,
+  "total": 11900,
+  "total_tax_amounts": [
+    {
+      "amount": 1900,
+      "inclusive": false,
+      "tax_rate": {
+        "id": "txr_de19_example",
+        "object": "tax_rate",
+        "display_name": "USt",
+        "percentage": 19.0,
+        "inclusive": false
+      },
+      "taxable_amount": 10000
+    }
+  ],
+  "lines": {
+    "object": "list",
+    "data": [
+      {
+        "id": "il_example_1",
+        "object": "line_item",
+        "amount": 10000,
+        "currency": "eur",
+        "description": "Cloud-Hosting Professional, 1 Monat",
+        "livemode": false,
+        "period": {
+          "start": 1771113600,
+          "end": 1773568800
+        },
+        "price": {
+          "id": "price_example",
+          "object": "price",
+          "active": true,
+          "currency": "eur",
+          "nickname": "Professional",
+          "product": "prod_example",
+          "recurring": {
+            "interval": "month",
+            "interval_count": 1,
+            "usage_type": "licensed"
+          },
+          "tax_behavior": "exclusive",
+          "type": "recurring",
+          "unit_amount": 10000,
+          "unit_amount_decimal": "10000"
+        },
+        "quantity": 1,
+        "tax_amounts": [
+          {
+            "amount": 1900,
+            "inclusive": false,
+            "tax_rate": {
+              "id": "txr_de19_example",
+              "percentage": 19.0,
+              "display_name": "USt",
+              "inclusive": false
+            },
+            "taxable_amount": 10000
+          }
+        ],
+        "type": "subscription"
+      }
+    ],
+    "has_more": false,
+    "total_count": 1,
+    "url": "/v1/invoices/in_1ExampleFinalized0001/lines"
+  },
+  "seller": {
+    "name": "Beispiel GmbH",
+    "street": "Musterstraße 1",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "country": "DE",
+    "vat_id": "DE123456789",
+    "email": "rechnung@beispiel.example",
+    "phone": "+49-30-000000-0",
+    "contact_name": "Ina Beispiel",
+    "iban": "DE89370400440532013000",
+    "iban_note": "EXAMPLE — not a live account",
+    "bic": "COBADEFFXXX",
+    "terms": "Zahlbar innerhalb von 30 Tagen netto."
+  }
+}
