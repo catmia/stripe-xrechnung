@@ -125,6 +125,8 @@ Included UBL goldens `golden/xrechnung_b2b_19.xml` and `golden/xrechnung_b2g_lei
 
 MIT — see [LICENSE](LICENSE). Commercial use of *generated invoices* is OK. The library does not claim copyright in your invoice data.
 
+Field-level Stripe → BT-* notes (same mapping this library implements): https://dev.to/thor_4e886628f33fca7fa8df/stripe-invoice-json-en-16931-bt-germany-2026-cda
+
 ---
 
 A fuller CLI (ZUGFeRD / Factur-X CII, archive, German error catalog) lives at https://vegasweiss.gumroad.com/l/e-rechnung-kit-2026
